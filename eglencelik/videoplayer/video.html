@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Video Player</title>
+
+  <!-- S-Tech04 -->
+
+  <!-- www.youtube.com/c/STech04 -->
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div id="video_player">
+        <video preload="metadata" id="main-video">
+          <source src="icerik/xampp.mp4" type="video/mp4">
+          <source src="icerik/xampp.mp4" type="video/mp4">
+          <track id="track1" label="English" kind="subtitles" src="./How To Get Started With VSCode.vtt" srclang="en">
+          <track id="track2" label="Türkçe" kind="subtitles" src="./test.vtt" srclang="en">
+        </video>
+        <p class="caption_text"></p>
+        <div class="progressAreaTime">0:00</div>
+
+        <div class="controls">
+          <div class="progress-area">
+            <div class="progress-bar">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="controls-list">
+            <div class="controls-left">
+              <span class="icon">
+                <i class="material-icons fast-rewind">replay_10</i>
+              </span>
+
+              <span class="icon">
+                <i class="material-icons play_pause">play_arrow</i>
+              </span>
+
+              <span class="icon">
+                <i class="material-icons fast-forward">forward_10</i>
+              </span>
+
+              <span class="icon">
+                <i class="material-icons volume">volume_up</i>
+
+                <input type="range" min="0" max="100" class="volume_range" />
+              </span>
+
+              <div class="timer">
+                <span class="current">0:00</span> /
+                <span class="duration">0:00</span>
+              </div>
+            </div>
+
+            <div class="controls-right">
+              <span class="icon">
+                <i class="material-icons auto-play"></i>
+              </span>
+
+              <span class="icon">
+                <i class="material-icons captionsBtn">closed_caption</i>
+              </span>
+
+              <span class="icon">
+                <i class="material-icons settingsBtn">settings</i>
+              </span>
+
+              <span class="icon">
+                <i class="material-icons picture_in_picutre">picture_in_picture_alt</i>
+              </span>
+
+              <span class="icon">
+                <i class="material-icons fullscreen">fullscreen</i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div id="settings">
+          <div class="playback">
+            <span>Playback Speed</span>
+            <ul>
+              <li data-speed="0.25">0.25</li>
+
+              <li data-speed="0.5">0.5</li>
+
+              <li data-speed="0.75">0.75</li>
+
+              <li data-speed="1" class="active">Normal</li>
+
+              <li data-speed="1.25">1.25</li>
+
+              <li data-speed="1.5">1.5</li>
+
+              <li data-speed="1.75">1.75</li>
+
+              <li data-speed="2">2</li>
+            </ul>
+          </div>
+        </div>
+        <div id="captions">
+          <div class="caption">
+            <span>Select Subtitle</span>
+            <ul>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Copyright &copy; 2022
+      <a href=""></a>Yusuf'un mekanı</span>
+       <br>
+    <center>
+    <button>
+  <span ><a href="../index.html" >Geri</a></span>
+  <div class="liquid"></div>
+</button>
+<style type="text/css">
+    /* From cssbuttons.io by @westitan */
+button {
+ position: relative;
+ padding: 19px 36px;
+ display: block;
+ text-decoration: none;
+ text-transform: uppercase;
+ overflow: hidden;
+ border-radius: 40px;
+ border: none;
+}
+
+button span {
+ position: relative;
+ color: #fff;
+ font-family: Arial;
+ letter-spacing: 8px;
+ z-index: 1;
+}
+
+button .liquid {
+ position: absolute;
+ top: -80px;
+ left: 0;
+ width: 100%;
+ height: 200px;
+ background: #4973ff;
+ box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+ transition: .5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+ content: '';
+ width: 200%;
+ height: 200%;
+ position: absolute;
+ top: 0;
+ left: 50%;
+ transform: translate(-50%, -75%);
+ background: #fff;
+}
+
+button .liquid::before {
+ border-radius: 45%;
+ background: rgba(20, 20, 20, 1);
+ animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+ border-radius: 40%;
+ background: rgba(20, 20, 20, .5);
+ animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+ top: -120px;
+}
+
+@keyframes animate {
+ 0% {
+  transform: translate(-50%, -75%) rotate(0deg);
+ }
+
+ 100% {
+  transform: translate(-50%, -75%) rotate(360deg);
+ }
+}
+</style>
+</center>
+  </footer>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
