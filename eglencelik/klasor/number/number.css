@@ -1,0 +1,134 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+#header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    background-color: #DFDFDF;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.wrap-inline {
+    display: inline-block;
+}
+
+#container {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+}
+
+#blocks {
+    position: relative;
+    margin: 0 auto;
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #000088;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    border: 4px solid transparent;
+}
+
+.border {
+    border-color: #FF0000;
+    transition: all 0.25s ease;
+}
+
+#numberToFind {
+    user-select: none;
+    width: 80px;
+    height: 80px;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #cccccc;
+    background-color: #272792;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#counter {
+    user-select: none;
+    width: 100px;
+    height: 80px;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #222222;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    user-select: none;
+    width: 200px;
+    height: 80px;
+    font-weight: bolder;
+    font-size: 2.2em;
+    color: #ffffff;
+    background-color: #1E90FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.button:hover {
+    background-color: #00BFFF;
+}
+
+.button:active {
+    background-color: #4682B4;
+}
+
+.social-footer {
+	padding: 1rem;
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+			justify-content:center;
+  }
+  
+  .social-footer .social-footer-icons .fa {
+	font-size: 4.3rem;
+	color: white;
+  }
+  
+  .social-footer .social-footer-icons .fa:hover {
+	color: #4a4a4a;
+	transition: color 0.3s ease-in;
+  }
